@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body,html{
+    height: 100%;
+}
+body{
+    display: flex;  align-items: center; justify-content: center; flex-direction: column;
+    background-color: lemonchiffon;
+}
+.head{
+    display: flex; align-items: center; justify-content: space-around;
+    background-color: black;
+    width: 80vh;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.container{
+    width: 80vh;
+    background-color: black;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap: 3px;
+    padding: 3px;
+}
+.kares{display: flex; align-items: center; justify-content: center;}
+.pixel{
+    background-color: rgb(255, 255, 255);
+}
+.background, .color{
+    display: flex; align-items: center; justify-content: center;
+}
+input,button{height: 30px;  cursor: pointer;}
+button{padding: 5px; color: black; }
+input{width: 10vh; margin-left: 10px;}
