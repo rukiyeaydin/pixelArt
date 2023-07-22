@@ -9,7 +9,7 @@ body,html{
 }
 body{
     display: flex;  align-items: center; justify-content: center; flex-direction: column;
-    background-color: lemonchiffon;
+    background-color: rgb(145, 234, 150);
 }
 .head{
     display: flex; align-items: center; justify-content: space-around;
