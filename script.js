@@ -2,10 +2,11 @@ const inputbg = document.querySelector(".inputbg");
 const container = document.querySelector(".container");
 const brush = document.querySelector(".brush");
 const kareler = document.querySelector(".kareler");
+const reset = document.querySelector(".buton");
 
 inputbg.addEventListener("change", () => {
     newValue = inputbg.value;
-    document.querySelector(".container").style.backgroundColor = newValue;
+    container.style.backgroundColor = newValue;
 }) 
 
 let tikla = false;
@@ -44,4 +45,13 @@ window.addEventListener("mouseup",function(){
     tikla = false;
 })
 
+reset.addEventListener("click", () => {
+    container.style.backgroundColor = "black";
+    inputbg.value = "black";
+    brush.value = "#40C4FF";
 
+    kareler.value = "#ffffff";
+    document.querySelectorAll(".pixel").forEach((pixel) => {
+        pixel.style.backgroundColor = "white";
+    })
+})
